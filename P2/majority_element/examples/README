@@ -1,0 +1,14 @@
+This is a collection of test data for the problem "majority_element" in
+the course CS-E3190 Principles of Algorithmic Techniques.
+
+The data consists of numbers indicating the value of an element.
+An instance file has the following format:
+
+<number> <number ... <number>
+
+The filenames are formatted as
+
+	<int>.<int or none>.instance
+
+where <int> is just an index number (not relevant to the problem), and
+<int or none> marks the solution of the problem instance.

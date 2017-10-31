@@ -1,0 +1,16 @@
+This is a collection of test data for the problem "index-value pairs" in
+the course CS-E3190 Principles of Algorithmic Techniques.
+
+The data files use the following format:
+
+	n x_1 x_2 x_3 ... x_n
+
+where n and all x_i are integers. The integers x_i are sorted from smallest to
+largest.
+
+The filenames are formatted as
+
+	<int>.<int or none>.instance
+
+where <int> is just an index number (not relevant to the problem), and
+<int or none> marks the solution of the problem instance.

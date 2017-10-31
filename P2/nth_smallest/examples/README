@@ -1,0 +1,16 @@
+This is a collection of test data for the problem "nth_smallest" in
+the course CS-E3190 Principles of Algorithmic Techniques.
+
+The data files use the following format:
+
+	n a_1 a_2 ... a_n b_1 b_2 ... b_n
+
+where n, a_i and b_i are all integers. a_1 ... a_n, and b_1 ... b_n are two
+sorted arrays that both have the size n.
+
+The filenames are formatted as
+
+	<int>.<int>.instance
+
+where the first <int> is just an index number (not relevant to the problem),
+and the second <int> marks the solution of the problem instance.
