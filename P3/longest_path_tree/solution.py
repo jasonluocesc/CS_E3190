@@ -23,8 +23,18 @@ def get_longest_path(graph):
     """
     
     # Write your code here.
-    G=graph
-    print(list(dfs_edges(G,1)))
+
+    def dfs(G, start):
+        visited, stack = set(), [start]
+        while stack:
+            vertex = stack.pop(0)
+            if vertex not in visited:
+                visited.add(vertex)
+                stack.extend(G.node - visited)
+        return visited
+
+    return dfs(graph, dfs(graph, 1)[-1])
+
     # Hint! If you'd like to test out these commands without
     # writing a full-fledged program, you might want to familiarise
     # yourself with the Python interactive shell or IPython (available

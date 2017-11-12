@@ -1,0 +1,20 @@
+This is a collection of test data for the problem "longest_path" in
+the course CS-E3190 Principles of Algorithmic Techniques.
+
+The data consists of directed graphs in DIMACS format.
+A DIMACS file has the following format:
+
+p e <number of nodes> <number of edges>
+e <source node> <dest node>
+e <source node> <dest node>
+...
+e <source node> <dest node>
+
+The filenames have the form
+
+	<int>.<int or 'cyclic'>.graph
+
+where <int> is just an index number (not relevant to the problem), and
+<int or 'cyclic'> is either the number of nodes along the longest path
+or the string 'cyclic' if the graph is cyclic and therefore no longest
+path exists.
