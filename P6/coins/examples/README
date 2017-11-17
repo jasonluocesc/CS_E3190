@@ -1,0 +1,11 @@
+This is a collection of test data for the problem "coins" in
+the course CS-E3190 Principles of Algorithmic Techniques.
+
+The files have the following format:
+<target value> <total number of denominations>
+<denom_1> <denom_2> ... <denom_n>
+
+where the denom_i are sorted in ascending order.
+
+All values are integers. For more information, see the instructions for
+this assignment.

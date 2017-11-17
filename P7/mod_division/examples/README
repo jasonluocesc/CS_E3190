@@ -1,0 +1,26 @@
+This is a collection of test data for the problem "mod_division" in
+the course CS-E3190 Principles of Algorithmic Techniques.
+
+The data files use the following format:
+
+	a b prime
+
+where
+	a : integer
+		in [0, prime-1]
+	b : integer
+		in [1, prime-1]
+	prime : integer, also prime number.
+
+The filenames are formatted as
+
+	<int>.<int>.instance
+
+where the first <int> is just an index number (not relevant for the problem),
+and the second <int> marks the solution of the problem instance.
+
+The contents of the file are meant to be used as command line parameters. One
+system-dependent way to pass them to your program from the command line would
+be
+
+	python mod_division.py $(cat 01.5817.instance)

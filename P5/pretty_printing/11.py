@@ -1,0 +1,1 @@
+print('1\n2 \t 3\r\n4'.split())

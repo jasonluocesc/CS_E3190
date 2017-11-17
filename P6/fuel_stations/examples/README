@@ -1,0 +1,14 @@
+This is a collection of test data for the problem "fuel_stations" in
+the course CS-E3190 Principles of Algorithmic Techniques.
+
+The files have the following format:
+<minimum distance between stations> <total number of locations>
+<dist_1> <dist_2> ... <dist_n>
+<profit_1> <profit_2> ... <profit_n>
+
+where dist_i is the distance to the i-th location from the beginning of
+the road, and profit_i is the profit one gets from setting up a fuel
+station at location i.
+
+All values are integers. For more information, see the instructions for
+this assignment.

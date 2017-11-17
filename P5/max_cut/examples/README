@@ -1,0 +1,14 @@
+This is a collection of test data for the problem "max_cut" in
+the course CS-E3190 Principles of Algorithmic Techniques.
+
+The data consists of directed graphs in DIMACS format.
+A DIMACS file has the following format:
+
+p e <number of nodes> <number of edges>
+e <source node> <dest node>
+e <source node> <dest node>
+...
+e <source node> <dest node>
+
+These graphs are undirected, but the edges are only marked in one
+direction (but it should be assumed they go both ways).

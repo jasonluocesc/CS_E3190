@@ -1,0 +1,24 @@
+This is a collection of test data for the problem "mod_mult_inverse" in
+the course CS-E3190 Principles of Algorithmic Techniques.
+
+The data files use the following format:
+
+	a prime
+
+where
+	a : integer
+		in [1, p-1]
+	prime : integer, also prime number
+
+The filenames are formatted as
+
+	<int>.<int>.instance
+
+where the first <int> is just an index number (not relevant to the problem),
+and the second <int> marks the solution of the problem instance.
+
+The contents of the file are meant to be used as command line parameters. One
+system-dependent way to pass them to your program from the command line would
+be
+
+	python mod_mult_inverse.py $(cat 01.5817.instance)

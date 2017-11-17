@@ -1,0 +1,22 @@
+This is a collection of test data for the problem "shortest cycle" in
+the course CS-E3190 Principles of Algorithmic Techniques.
+
+The data consists of undirected graphs in DIMACS format. A DIMACS file has
+the following format:
+
+p e <number of nodes> <number of edges>
+e <source node> <dest node>
+e <source node> <dest node>
+...
+e <source node> <dest node>
+
+These graphs are undirected, but the edges are only marked in one
+direction (it should be assumed they go both ways).
+
+The filenames have the form
+
+	<int>.<int or 'acyclic'>.graph
+
+where <int> is just an index number (not relevant to the problem), and
+<int or 'acyclic'> is either the length of the shortest cycle or the string
+'acyclic' if the graph is acyclic and therefore no shortest cycle exists.
