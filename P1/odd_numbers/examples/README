@@ -1,0 +1,15 @@
+This is a collection of test data for the problem "odd_numbers" in
+the course CS-E3190 Principles of Algorithmic Techniques.
+
+The data files use the following format:
+
+	a_1 a_2 ... a_n
+
+where a_1 ... a_n are all integers.
+
+The filenames are formatted as
+
+	<int>.<int>.instance
+
+where the first <int> is just an index number (not relevant to the problem),
+and the second <int> marks the solution of the problem instance.
