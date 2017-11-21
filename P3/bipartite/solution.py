@@ -16,6 +16,31 @@ def get_bipartition(g):
         graph is not bipartite.
     """
     # Write your code here.
+    colorArr = [-1] * (len(g.nodes()) + 1)
+    for node in g.nodes():
+        start = g.neighbors(node)
+        if len(start)>0:
+            src = start.pop()
+            break
+    colorArr[src] = 1
+    queue = []
+    queue.append(src)
+    while (queue):
+        u = queue.pop()
+        for v in g.nodes():
+            if g.has_edge(u, v) and colorArr[v] == -1:
+                colorArr[v] = 1 - colorArr[u]
+                queue.append(v)
+            elif g.has_edge(u, v) and colorArr[u] == colorArr[v]:
+                return None
+
+    red = set()
+    for i in range(1, len(colorArr)):
+        if colorArr[i] == 1:
+            red.add(i)
+    return list(red)
+
+
 
     # Hint! If you'd like to test out these commands without
     # writing a full-fledged program, you might want to familiarise
