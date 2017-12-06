@@ -26,4 +26,16 @@ def get_multiplicative_inverse(a, p):
         1 = a_inverse * a (mod p)
     """
     # Write your code here.
-    return 1
+    x = modexp(a, p - 2, p)
+    return x
+
+
+def modexp(x, e, N):
+    if e == 0:
+        return 1
+    else:
+        z = modexp(x, e // 2, N)
+        if e % 2 == 0:
+            return (z ** 2) % N
+        else:
+            return (x * z ** 2) % N
