@@ -29,3 +29,36 @@ def get_coins(target_value, denominations):
         denominations.
     """
     # Write your code here.
+    d_len = len(denominations)
+    m = [[1000 for x in range(target_value + 1)] for y in range(d_len)]
+    result = [0] * d_len
+    for i in range(0, d_len):
+        m[i][0] = 0
+    for j in range(0, target_value + 1):
+        if j % denominations[0] == 0:
+            m[0][j] = j // denominations[0]
+
+    for j in range(1, target_value + 1):
+        for i in range(0, len(denominations)):
+            if j >= denominations[i]:
+                m[i][j] = min(m[i - 1][j], 1 + m[i][j - denominations[i]])
+            else:
+                m[i][j] = m[i - 1][j]
+
+    count = d_len - 1
+    heng = target_value
+    while count >= 0:
+        if m[count][heng] == m[count - 1][heng]:
+            if count == 0 and m[count][heng] != 1000:
+                result[count] = m[count][heng]
+            result[count] = result[count]
+            count = count - 1
+        else:
+            result[count] = result[count] + 1
+            heng = heng - denominations[count]
+    sum = 0
+    for i in range (0,d_len):
+        sum = sum + result[i]
+    if sum ==0:
+        return None
+    return result

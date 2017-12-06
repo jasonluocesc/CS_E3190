@@ -1,5 +1,3 @@
-
-
 def subset_sum(input, sum):
     input_size = len(input)
     result = [[False for x in range(sum+1)] for y in range(input_size)]
